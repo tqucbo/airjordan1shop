@@ -1,5 +1,6 @@
 import 'package:airjordan1shop/constants.dart';
 import 'package:airjordan1shop/models/product.dart';
+import 'package:airjordan1shop/screens/details/details_screen.dart';
 import 'package:airjordan1shop/screens/home/components/categories.dart';
 import 'package:airjordan1shop/screens/home/components/item_card.dart';
 import 'package:flutter/material.dart';
@@ -65,6 +66,14 @@ class HomeScreen extends StatelessWidget {
                 ),
                 itemBuilder: (context, index) => ItemCard(
                   product: products[index],
+                  press: () => Navigator.push(
+                    context,
+                    MaterialPageRoute(
+                      builder: (context) => DetailsScreen(
+                        product: products[index],
+                      ),
+                    ),
+                  ),
                 ),
               ),
             ),
@@ -74,4 +83,3 @@ class HomeScreen extends StatelessWidget {
     );
   }
 }
-
