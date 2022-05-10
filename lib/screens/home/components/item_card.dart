@@ -35,6 +35,9 @@ class ItemCard extends StatelessWidget {
             padding: const EdgeInsets.symmetric(vertical: kDefaultPadding / 4),
             child: Text(
               product.title,
+              overflow: TextOverflow.fade,
+              maxLines: 1,
+              softWrap: false,
               style: const TextStyle(
                 color: kTextLightColor,
               ),

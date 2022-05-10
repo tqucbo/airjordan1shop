@@ -20,7 +20,7 @@ class Product {
 List<Product> products = [
   Product(
     id: 1,
-    title: 'AJ1 #1',
+    title: 'High Patent Bred',
     description: dummyText,
     price: 291,
     size: 11,
@@ -29,7 +29,7 @@ List<Product> products = [
   ),
   Product(
     id: 2,
-    title: 'AJ1 #2',
+    title: 'Mid Barcelona',
     description: dummyText,
     price: 164,
     size: 11,
@@ -38,7 +38,7 @@ List<Product> products = [
   ),
   Product(
     id: 3,
-    title: 'AJ1 #3',
+    title: 'High Gold Toe',
     description: dummyText,
     price: 431,
     size: 11,
@@ -47,7 +47,7 @@ List<Product> products = [
   ),
   Product(
     id: 4,
-    title: 'AJ1 #4',
+    title: 'Mid Patent Black Gold',
     description: dummyText,
     price: 303,
     size: 11,
@@ -56,7 +56,7 @@ List<Product> products = [
   ),
   Product(
     id: 5,
-    title: 'AJ1 #5',
+    title: 'Mid Carbon Fiber',
     description: dummyText,
     price: 215,
     size: 11,
@@ -65,7 +65,7 @@ List<Product> products = [
   ),
   Product(
     id: 6,
-    title: 'AF1 #6',
+    title: 'High Shattered Backboard 3.0',
     description: dummyText,
     price: 105,
     size: 11,
