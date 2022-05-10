@@ -67,7 +67,7 @@ List<Product> products = [
     id: 6,
     title: 'High Shattered Backboard 3.0',
     description: dummyText,
-    price: 105,
+    price: 414,
     size: 11,
     image: 'assets/images/aj1_6.png',
     color: const Color(0xFFdc5302),
