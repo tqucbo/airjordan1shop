@@ -70,6 +70,6 @@ List<Product> products = [
     price: 105,
     size: 11,
     image: 'assets/images/aj1_6.png',
-    color: const Color(0xFFf6f4fa),
+    color: const Color(0xFFdc5302),
   ),
 ];

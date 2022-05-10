@@ -21,11 +21,15 @@ class ItemCard extends StatelessWidget {
         children: [
           Expanded(
             child: Container(
-                padding: const EdgeInsets.all(kDefaultPadding),
-                decoration: BoxDecoration(
-                    color: product.color,
-                    borderRadius: BorderRadius.circular(16)),
-                child: Image.asset(product.image)),
+              padding: const EdgeInsets.all(kDefaultPadding),
+              decoration: BoxDecoration(
+                  color: product.color,
+                  borderRadius: BorderRadius.circular(16)),
+              child: Hero(
+                child: Image.asset(product.image),
+                tag: product.id,
+              ),
+            ),
           ),
           Padding(
             padding: const EdgeInsets.symmetric(vertical: kDefaultPadding / 4),

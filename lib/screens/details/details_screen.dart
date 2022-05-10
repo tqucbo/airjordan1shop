@@ -1,7 +1,8 @@
 import 'package:airjordan1shop/constants.dart';
 import 'package:airjordan1shop/models/product.dart';
-import 'package:airjordan1shop/screens/details/components/cart_counter.dart';
+import 'package:airjordan1shop/screens/details/components/add_to_cart_or_buy_now.dart';
 import 'package:airjordan1shop/screens/details/components/color_and_size.dart';
+import 'package:airjordan1shop/screens/details/components/counter_with_favourite_button.dart';
 import 'package:airjordan1shop/screens/details/components/description.dart';
 import 'package:airjordan1shop/screens/details/components/product_title_with_image.dart';
 import 'package:flutter/material.dart';
@@ -67,14 +68,8 @@ class DetailsScreen extends StatelessWidget {
                     children: [
                       ColorAndSize(product: product),
                       Description(product: product),
-                      Row(
-                        children: [
-                          CartCounter(),
-                          Container(
-                            
-                          ),
-                        ],
-                      ),
+                      const CounterWithFavouriteButton(),
+                      AddToCartOrBuyNow(product: product)
                     ],
                   ),
                 ),
