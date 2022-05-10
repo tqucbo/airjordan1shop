@@ -1,5 +1,8 @@
 import 'package:airjordan1shop/constants.dart';
 import 'package:airjordan1shop/models/product.dart';
+import 'package:airjordan1shop/screens/details/components/cart_counter.dart';
+import 'package:airjordan1shop/screens/details/components/color_and_size.dart';
+import 'package:airjordan1shop/screens/details/components/description.dart';
 import 'package:airjordan1shop/screens/details/components/product_title_with_image.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/flutter_svg.dart';
@@ -46,14 +49,33 @@ class DetailsScreen extends StatelessWidget {
               height: size.height,
               child: Stack(children: [
                 Container(
-                  height: 500,
+                  //height: 500,
                   margin: EdgeInsets.only(top: size.height * 0.3),
+                  padding: EdgeInsets.only(
+                    top: size.height * 0.12,
+                    left: kDefaultPadding,
+                    right: kDefaultPadding,
+                  ),
                   decoration: const BoxDecoration(
                     color: Colors.white,
                     borderRadius: BorderRadius.only(
                       topLeft: Radius.circular(24),
                       topRight: Radius.circular(24),
                     ),
+                  ),
+                  child: Column(
+                    children: [
+                      ColorAndSize(product: product),
+                      Description(product: product),
+                      Row(
+                        children: [
+                          CartCounter(),
+                          Container(
+                            
+                          ),
+                        ],
+                      ),
+                    ],
                   ),
                 ),
                 ProductTitleWithImage(product: product)
